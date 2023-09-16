@@ -1,0 +1,10 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [{
+            "appID": "HH5LC7B9T8.app.getturtle",
+            "paths": ["/*"]
+            }
+        ]
+    }
+}
