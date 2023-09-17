@@ -1,7 +1,89 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <!-- <meta http-equiv="refresh" content="0;url=https://parkwithturtle.my.canva.site/" /> -->
-    <title>Turtle #RideGreen</title>
-  </head>
- <body>Coming soon</body>
+<link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+<title>Turtle - Biking, Simplified!</title>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('./assets/bg-bike.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.appstore {
+  width: 150px;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+
+.email {
+  font-size: 18px;
+}
+
+@media only screen and (max-device-width: 450px) {
+  .bgimg {
+        font-size: 45px;
+  }
+  .appstore {
+    width: 400px;
+  }
+
+  .email {
+    font-size: 0px;
+  }
+}
+
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+    <p>Turtle</p>
+  </div>
+  <div class="middle">
+    <h1>Biking, simplified!</h1>
+    <hr>
+    <p>Find Bike Parking.</p>
+    <p>Rent Awesome Bikes.(Soon)</p>
+    <p>All under one Platform.</p>
+    <a href="https://apps.apple.com/us/app/turtle-ridegreen/id6465691271"><img src="./assets/appstore-download.png" class="appstore"/></a>
+  </div>
+  <div class="bottomleft">
+    <p class="email">Questions? Reach out at<!-- fhetydagzzzgjds --> parkwithturtle@<!-- sdfjsdhfkjypcs -->gmail<!-- asjoxp -->.com</p>
+  </div>
+</div>
+
+</body>
 </html>
