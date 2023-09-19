@@ -1,9 +1,19 @@
 {
     "applinks": {
         "apps": [],
-        "details": [{
-            "appID": "HH5LC7B9T84RDB5SGPHY.app.getturtle",
-            "paths": ["/*"]
+        "details": [
+            {
+                "appIDs": ["HH5LC7B9T84RDB5SGPHY.app.getturtle"],
+                "components": [
+                    {
+                       "#": "home",
+                       "comment": "Matches any URL for home screen"
+                    },
+                    {
+                       "/": "/*",
+                       "comment": "Matches any URL with postfix"
+                    }
+                  ]
             }
         ]
     }
