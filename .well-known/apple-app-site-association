@@ -1,10 +1,16 @@
 {
     "applinks": {
-        "apps": [],
         "details": [
             {
-                "appID": "HH5LC7B9T8.app.getturtle",
-                "paths":[ "*",  "/" ]
+                "appIDs": [
+                    "HH5LC7B9T8.app.getturtle"
+                ],
+                "components": [
+                    {
+                        "/": "*",
+                        "comment": "Matches any URLs"
+                    }
+                ]
             }
         ]
     }
