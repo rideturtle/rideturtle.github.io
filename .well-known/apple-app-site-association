@@ -4,7 +4,7 @@
         "details": [
             {
                 "appID": "4RDB5SGPHY.app.getturtle",
-                "paths":[ "*",  "/" ]
+                "paths":[ "/?id*" ]
             }
         ]
     }
