@@ -2,6 +2,16 @@
 <html>
 <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
 <title>Turtle - Biking, Simplified!</title>
+<script>
+  const WEBAPP_URL = "https://main.do9466l1su82y.amplifyapp.com"
+  const urlParams = new URLSearchParams(window.location.search);
+  const idParam = urlParams.get('id2');
+  if (idParam !== undefined && idParam !== null) {
+    // redirect to web app
+    window.location.href = WEBAPP_URL + "?id=" + idParam;
+  }
+
+</script>
 <style>
 body, html {
   height: 100%;
