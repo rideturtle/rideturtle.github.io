@@ -2,19 +2,6 @@
 <html>
 <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
 <title>Turtle - Biking, Simplified!</title>
-<script>
-  const WEBAPP_URL = "https://main.do9466l1su82y.amplifyapp.com/"
-  const urlParams = new URLSearchParams(window.location.search);
-  const idParam = urlParams.get('id2');
-  if (idParam !== undefined && idParam !== null) {
-    // redirect to web app
-    setTimeout(
-    function() {
-      window.location.href = WEBAPP_URL + "lock/" + idParam;
-    }, 1000);
-  }
-
-</script>
 <style>
 body, html {
   height: 100%;
@@ -61,12 +48,16 @@ hr {
   width: 40%;
 }
 
-.caption {
+#caption {
     font-size: 18px;
 }
 
 .email {
   font-size: 18px;
+}
+
+.websiteUrl {
+  color: white;
 }
 
 @media only screen and (max-device-width: 450px) {
@@ -77,7 +68,7 @@ hr {
     width: 400px;
   }
 
-  .caption {
+  #caption {
     font-size: 30px;
   }
 
@@ -94,16 +85,27 @@ hr {
     <p>Turtle</p>
   </div>
   <div class="middle">
-    <h1>Biking, simplified!</h1>
+    <h1 id="headline">Biking, simplified!</h1>
     <hr>
-    <p>Hubs to Park and Rent Bikes for FREE</p>
-    <p class="caption"><i>Turtle is a passion project built by a bicyclist for bicyclists</i></p>
+    <p id="tagline">Hubs to Park and Rent Bikes for FREE</p>
+    <p id="WebUrl"></p>
+    <p id="caption"><i>Turtle is a passion project built by a bicyclist for bicyclists</i></p>
     <a href="https://apps.apple.com/us/app/turtle-ridegreen/id6465691271"><img src="./assets/appstore-download.png" class="appstore"/></a>
   </div>
   <div class="bottomleft">
     <p class="email">Questions? Reach out at<!-- fhetydagzzzgjds --> parkwithturtle@<!-- sdfjsdhfkjypcs -->gmail<!-- asjoxp -->.com</p>
   </div>
 </div>
-
 </body>
+<script>
+  const WEBAPP_URL = "https://main.do9466l1su82y.amplifyapp.com/"
+  const urlParams = new URLSearchParams(window.location.search);
+  const idParam = urlParams.get('id2');
+  if (idParam !== undefined && idParam !== null) {
+    document.getElementById("headline").innerHTML = "Zone #" + idParam;
+    document.getElementById("tagline").innerHTML = "";
+    document.getElementById("WebUrl").innerHTML = "<a class='websiteUrl' href='" + WEBAPP_URL + "'>Continue on Web</a>";
+    document.getElementById("caption").innerHTML = "or";
+  }
+</script>
 </html>
