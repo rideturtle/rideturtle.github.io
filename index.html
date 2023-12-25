@@ -102,10 +102,11 @@ hr {
   const urlParams = new URLSearchParams(window.location.search);
   const idParam = urlParams.get('id');
   if (idParam !== undefined && idParam !== null) {
-    document.getElementById("headline").innerHTML = "Zone #" + idParam;
-    document.getElementById("tagline").innerHTML = "";
-    document.getElementById("WebUrl").innerHTML = "<a class='websiteUrl' href='" + WEBAPP_URL + idParam + "'>Continue on Web</a>";
-    document.getElementById("caption").innerHTML = "or";
+    window.location.href = WEBAPP_URL + idParam;
+    // document.getElementById("headline").innerHTML = "Zone #" + idParam;
+    // document.getElementById("tagline").innerHTML = "";
+    // document.getElementById("WebUrl").innerHTML = "<a class='websiteUrl' href='" + WEBAPP_URL + idParam + "'>Continue on Web</a>";
+    // document.getElementById("caption").innerHTML = "or";
   }
 </script>
 </html>
